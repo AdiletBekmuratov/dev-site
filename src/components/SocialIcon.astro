@@ -1,0 +1,19 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  icon: string;
+  href: string;
+}
+
+const { href, icon } = Astro.props;
+---
+
+<a
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="transition-transform hover:scale-110"
+>
+  <Icon name={icon} class="text-2xl sm:text-3xl" />
+</a>

@@ -1,11 +1,51 @@
 ---
+import AppIcon from "@/components/AppIcon.astro";
+import SocialIcon from "@/components/SocialIcon.astro";
 import Layout from "@/layouts/Layout.astro";
+import CryptogramImage from "public/apps/cryptogram-icon.jpg";
+import GrantMasterImage from "public/apps/grant-master-icon.jpg";
+import SanaImage from "public/apps/sana-icon.jpg";
 ---
 
 <Layout>
-	<div class="flex items-center justify-center flex-1">
-		<h1 class="text-4xl">
-			Adilet Bekmuratov
-		</h1>
-	</div>
+  <div class="flex flex-1 flex-col items-center justify-center gap-12">
+    <h1 class="text-center text-4xl sm:text-5xl">Adilet Bekmuratov</h1>
+    <div class="flex items-center gap-16 sm:gap-30">
+      <AppIcon
+        src={SanaImage}
+        alt="Sana"
+        href="https://apps.apple.com/kz/app/sana-ubt-%D0%B5%D0%BD%D1%82-%D2%B1%D0%B1%D1%82/id1624502626"
+        appStoreUrl="https://apps.apple.com/kz/app/sana-ubt-%D0%B5%D0%BD%D1%82-%D2%B1%D0%B1%D1%82/id1624502626"
+        googlePlayUrl="https://play.google.com/store/apps/details?id=com.myapp.predictor"
+      />
+      <AppIcon
+        src={GrantMasterImage}
+        alt="Grant Master"
+        href="https://apps.apple.com/kz/app/grant-master/id6478858051"
+        appStoreUrl="https://apps.apple.com/kz/app/grant-master/id6478858051"
+        googlePlayUrl="https://play.google.com/store/apps/details?id=kz.grant.master"
+      />
+      <AppIcon
+        src={CryptogramImage}
+        alt="Decoder. Cryptogram"
+        href="https://apps.apple.com/kz/app/decoder-%D0%BB%D0%BE%D0%B3%D0%B8%D0%BA%D0%B0%D0%BB%D1%8B%D2%9B-%D0%BE%D0%B9%D1%8B%D0%BD%D0%B4%D0%B0%D1%80/id6744414283"
+        appStoreUrl="https://apps.apple.com/kz/app/decoder-%D0%BB%D0%BE%D0%B3%D0%B8%D0%BA%D0%B0%D0%BB%D1%8B%D2%9B-%D0%BE%D0%B9%D1%8B%D0%BD%D0%B4%D0%B0%D1%80/id6744414283"
+        googlePlayUrl="https://play.google.com/store/apps/details?id=kz.adiletbekmuratov.cryptogram"
+      />
+    </div>
+    <div class="flex items-center gap-20">
+      <SocialIcon
+        href="https://github.com/AdiletBekmuratov/"
+        icon="simple-icons:github"
+      />
+      <SocialIcon
+        href="https://www.linkedin.com/in/adilet-bekmuratov/"
+        icon="logos:linkedin-icon"
+      />
+      <SocialIcon
+        href="https://www.instagram.com/adilet_bekmuratov/"
+        icon="simple-icons:instagram"
+      />
+    </div>
+  </div>
 </Layout>

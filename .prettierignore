@@ -1,0 +1,4 @@
+
+dist/
+src/content/**/*.md
+src/content/**/*.mdx
